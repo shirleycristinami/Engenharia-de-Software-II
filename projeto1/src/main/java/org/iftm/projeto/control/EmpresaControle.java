@@ -1,7 +1,6 @@
 package org.iftm.projeto.control;
 
 import java.util.List;
-import model.Empresa;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -56,7 +55,7 @@ public class EmpresaControle {
 	}
 
 	public void excluirPorId(Integer id) {
-		excluir(buscarPorId(Id));
+		excluir(buscarPorId(id));
 	}
 
 	public List<Empresa> buscarTodos() {

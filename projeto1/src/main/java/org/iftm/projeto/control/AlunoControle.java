@@ -12,7 +12,7 @@ public class AlunoControle {
 	private EntityManager em;
 
 	public AlunoControle() {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("projeto 1");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("projeto");
 		em = emf.createEntityManager();
 	}
 

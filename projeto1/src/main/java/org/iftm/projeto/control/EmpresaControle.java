@@ -12,7 +12,7 @@ public class EmpresaControle {
 	private EntityManager em;
 
 	public EmpresaControle() {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("projeto 1");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("projeto");
 		em = emf.createEntityManager();
 	}
 

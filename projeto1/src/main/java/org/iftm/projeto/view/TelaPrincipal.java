@@ -11,6 +11,9 @@ import javax.swing.JMenuItem;
 import javax.swing.KeyStroke;
 import java.awt.event.KeyEvent;
 import java.awt.event.InputEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.Color;
 
 public class TelaPrincipal {
 
@@ -44,6 +47,7 @@ public class TelaPrincipal {
 	 */
 	private void initialize() {
 		frame = new JFrame();
+		frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
@@ -54,24 +58,30 @@ public class TelaPrincipal {
 		frame.setJMenuBar(menuBar);
 		
 		JMenu mnNewMenu = new JMenu("CADASTRO");
+				
 		menuBar.add(mnNewMenu);
 		
-		JMenuItem mntmNewMenuItem = new JMenuItem("New menu item");
+		JMenuItem mntmNewMenuItem = new JMenuItem("Empresa");
+		mntmNewMenuItem.setBackground(new Color(128, 255, 128));
+		mntmNewMenuItem.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				TelaEmpresa te = new TelaEmpresa();
+				te.setVisible(true);
+				desktop.add(te);
+			}
+		});
 		mnNewMenu.add(mntmNewMenuItem);
 		
-		JMenuItem mntmNewMenuItem_1 = new JMenuItem("New menu item");
+		JMenuItem mntmNewMenuItem_1 = new JMenuItem("Aluno");
 		mnNewMenu.add(mntmNewMenuItem_1);
-		
-		JMenuItem mntmNewMenuItem_2 = new JMenuItem("New menu item");
-		mnNewMenu.add(mntmNewMenuItem_2);
 		
 		JMenu mnNewMenu_1 = new JMenu("CONSULTA");
 		menuBar.add(mnNewMenu_1);
 		
-		JMenuItem mntmNewMenuItem_3 = new JMenuItem("New menu item");
+		JMenuItem mntmNewMenuItem_3 = new JMenuItem("Empresa");
 		mnNewMenu_1.add(mntmNewMenuItem_3);
 		
-		JMenuItem mntmNewMenuItem_4 = new JMenuItem("New menu item");
+		JMenuItem mntmNewMenuItem_4 = new JMenuItem("Aluno");
 		mnNewMenu_1.add(mntmNewMenuItem_4);
 		
 		JMenu mnNewMenu_2 = new JMenu("AJUDA");

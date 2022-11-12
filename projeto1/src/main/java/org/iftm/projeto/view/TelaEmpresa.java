@@ -35,10 +35,9 @@ public class TelaEmpresa extends JInternalFrame {
 	 * Create the frame.
 	 */
 	public TelaEmpresa() {
+		setClosable(true);
 		setMaximizable(true);
 		setIconifiable(true);
-		setClosed(true);
-		setClosable(true);
 		getContentPane().setFont(new Font("Tahoma", Font.PLAIN, 12));
 		getContentPane().setLayout(null);
 		
@@ -55,8 +54,8 @@ public class TelaEmpresa extends JInternalFrame {
 		btnNewButton.setBounds(319, 29, 89, 23);
 		getContentPane().add(btnNewButton);
 		
-		JLabel lblNewLabel_1 = new JLabel("New label");
-		lblNewLabel_1.setBounds(168, 11, 46, 14);
+		JLabel lblNewLabel_1 = new JLabel("NewLabel");
+		lblNewLabel_1.setBounds(168, 11, 52, 14);
 		getContentPane().add(lblNewLabel_1);
 		
 		JButton btnNewButton_1 = new JButton("EXCLUIR");

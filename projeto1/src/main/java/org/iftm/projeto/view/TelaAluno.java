@@ -7,6 +7,7 @@ import javax.swing.JLabel;
 import java.awt.BorderLayout;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import java.awt.Color;
 
 public class TelaAluno extends JInternalFrame {
 	private JTextField textField;
@@ -83,6 +84,7 @@ public class TelaAluno extends JInternalFrame {
 		getContentPane().add(btnNewButton_3);
 		
 		JButton btnNewButton_4 = new JButton("FECHAR");
+		btnNewButton_4.setBackground(new Color(255, 0, 0));
 		btnNewButton_4.setBounds(323, 218, 89, 23);
 		getContentPane().add(btnNewButton_4);
 

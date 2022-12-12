@@ -34,6 +34,7 @@ public class TelaAluno extends JInternalFrame {
 	 * Create the frame.
 	 */
 	public TelaAluno() {
+		setTitle("CADASTRO - ALUNO");
 		setClosable(true);
 		setMaximizable(true);
 		setIconifiable(true);
@@ -89,5 +90,4 @@ public class TelaAluno extends JInternalFrame {
 		getContentPane().add(btnNewButton_4);
 
 	}
-
 }

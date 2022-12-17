@@ -90,4 +90,6 @@ public class TelaAluno extends JInternalFrame {
 		getContentPane().add(btnNewButton_4);
 
 	}
+	
+	
 }

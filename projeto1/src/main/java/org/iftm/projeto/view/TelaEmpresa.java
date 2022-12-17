@@ -51,15 +51,18 @@ public class TelaEmpresa extends JInternalFrame {
 		textField.setColumns(10);
 		
 		JButton btnNewButton = new JButton("INSERIR");
-		btnNewButton.setBounds(319, 29, 89, 23);
+		btnNewButton.setBackground(new Color(192, 192, 192));
+		btnNewButton.setBounds(319, 29, 105, 23);
 		getContentPane().add(btnNewButton);
 		
-		JLabel lblNewLabel_1 = new JLabel("NewLabel");
-		lblNewLabel_1.setBounds(168, 11, 52, 14);
+		JLabel lblNewLabel_1 = new JLabel("EMPRESA");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel_1.setBounds(143, 11, 77, 14);
 		getContentPane().add(lblNewLabel_1);
 		
 		JButton btnNewButton_1 = new JButton("EXCLUIR");
-		btnNewButton_1.setBounds(319, 124, 89, 23);
+		btnNewButton_1.setBackground(new Color(192, 192, 192));
+		btnNewButton_1.setBounds(319, 124, 105, 23);
 		getContentPane().add(btnNewButton_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("ENDEREÇO");
@@ -72,18 +75,19 @@ public class TelaEmpresa extends JInternalFrame {
 		textField_1.setColumns(10);
 		
 		JButton btnNewButton_2 = new JButton("ALTERAR");
-		btnNewButton_2.setBounds(319, 77, 89, 23);
+		btnNewButton_2.setBackground(new Color(192, 192, 192));
+		btnNewButton_2.setBounds(319, 77, 105, 23);
 		getContentPane().add(btnNewButton_2);
 		
 		JButton btnNewButton_3 = new JButton("CONSULTAR");
-		btnNewButton_3.setBackground(new Color(0, 0, 255));
+		btnNewButton_3.setBackground(new Color(192, 192, 192));
 		btnNewButton_3.setForeground(new Color(0, 0, 0));
-		btnNewButton_3.setBounds(304, 169, 104, 23);
+		btnNewButton_3.setBounds(319, 169, 105, 23);
 		getContentPane().add(btnNewButton_3);
 		
 		JButton btnNewButton_4 = new JButton("FECHAR");
-		btnNewButton_4.setBackground(new Color(255, 0, 0));
-		btnNewButton_4.setBounds(319, 214, 89, 23);
+		btnNewButton_4.setBackground(new Color(192, 192, 192));
+		btnNewButton_4.setBounds(319, 214, 105, 23);
 		getContentPane().add(btnNewButton_4);
 		
 		JLabel lblNewLabel_3 = new JLabel("RESPONSÁVEL");
